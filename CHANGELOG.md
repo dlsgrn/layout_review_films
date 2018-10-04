@@ -1,0 +1,1 @@
+[Issue 1](https://github.com/dlsgrn/layout_review_films/issues/1) : создал структуру папок для макетов
