@@ -1,0 +1,65 @@
+@import "_fonts.scss";
+
+header {
+    background-color: #E53935;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .5);
+}
+
+.top-slider {
+    color: #fff;
+}
+
+.nav-mnu {
+    .mnu-item {
+        cursor: pointer;
+
+        &:hover,&:focus{
+            a{
+                color: black;
+            }
+        }
+
+        &:active {
+            transform: translateY(3px);
+        }
+
+        a {
+            color: white;
+            font-family: 'HanSolo';
+        }
+    }
+}
+
+.top-slider-overlay {
+    background: #90A4AE;
+}
+
+button {
+    outline: none;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 2px darken($color: #3E2723, $amount: 5);
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}
+
+.b-register {
+    width: 140px;
+    height: 40px;
+    background-color: #00796B;
+
+    &:hover {
+        background-color: darken($color: #00796B, $amount: 6);
+    }
+}
+
+.b-login {
+    width: 100px;
+    height: 30px;
+
+    &:hover {
+        background-color: darken($color: #90A4AE, $amount: 8);
+    }
+}

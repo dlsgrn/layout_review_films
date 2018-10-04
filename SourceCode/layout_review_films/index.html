@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/waves.min.css" />
+    <link rel="stylesheet" href="vender/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Luckiest+Guy" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Логотип</div>
+        <nav class="nav-mnu">
+            <div class="mnu-item"><img src="img/top-menu-icons/icons8-электронное-обучение-2-48.png" alt="Article"> <a href="#">Статьи</a></div>
+            <div class="mnu-item"><img src="img/top-menu-icons/icons8-новости-50.png" alt="News"><a href="#">Новости</a></div>
+            <div class="mnu-item"><img src="img/top-menu-icons/icons8-бобина-с-пленкой-50.png" alt="Movie"><a href="#">Фильмы</a></div>
+            <div class="mnu-item"><img src="img/top-menu-icons/icons8-фильм-64.png" alt="Setials"><a href="#">Сериалы</a></div>
+            <div class="mnu-item"><img src="img/top-menu-icons/icons8-популярная-тема-64.png" alt="Top"><a href="#"></a><a href="#">ТОП</a></div>
+            <div class="mnu-item"><img src="img/top-menu-icons/icons8-документальный-64.png" alt="Take"><a href="#"></a><a href="#">За кадром</a></div>
+        </nav>
+    </header>
+    <section class="top-slider container">
+        <div class="fullscreen-video-wrap">
+            <video src="video/videoplayback.webm" autoplay="true" loop="true" muted="true"></video>
+            <div class="top-slider-overlay">
+                <div class="slider-content">
+                    <h1>Важный текст</h1>
+                    <p>Тут тоже типа того</p>
+                    <button class="b-register">Регистрация</button>
+                    <button class="b-login">Войти</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="main-content">
+            <div class="article">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat rem reprehenderit aperiam sint aliquam? Ducimus rem est dolorem placeat
+                    a ab sit! Sed nesciunt odio debitis dicta architecto et voluptate. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit.
+                    Distinctio, aut doloribus nemo earum autem amet nesciunt natus
+                    labore nobis qui repudiandae est suscipit obcaecati consectetur molestias soluta, eveniet,
+                    voluptates eius.</p>
+            </div>
+        </div>
+
+        <aside class="block-calendar">
+            <div id="calendar">
+                <div id="calendar_header"><i class="icon-chevron-left"></i>
+                    <h1></h1><i class="icon-chevron-right"></i>
+                </div>
+                <div id="calendar_weekdays"></div>
+                <div id="calendar_content"></div>
+            </div>
+        </aside>
+    </section>
+
+
+
+    <script src="js/waves.min.js"></script>
+    <script>
+        Waves.attach('button');
+        Waves.init();
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
