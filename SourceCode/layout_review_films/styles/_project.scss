@@ -12,102 +12,187 @@
 	text-align: center;
 }
 
-.fullscreen-video-wrap {
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-
-	video {
-		min-width: 100%;
-		min-height: 250px;
-	}
-}
-
 .logo {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	width: 100px;
 }
 
-.nav-mnu {
-	img {
-		width: 40px;
-		height: 40px;
-		padding-right: 5px;
-		display: flex;
-		margin: 3px auto;
-	}
-
-	padding-top: 10px;
-	min-width: 70em;
+.head-grid {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-evenly;
 
-	
-	/*.mnu-item {
+	.nav-mnu {
+		img {
+			width: 40px;
+			height: 40px;
+			padding-right: 5px;
+			display: flex;
+			margin: 3px auto;
+		}
+
+		height: 72px;
+		padding-top: 20px;
+		min-width: 70em;
 		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.line-authorization {
+	.block-button {
 		align-items: center;
-		padding-left: 15px;
-	}*/
-}
-
-.top-slider-overlay {
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.82;
-}
-
-.slider-content {
-	position: relative;
-	padding-top: 200px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	color: white;
-
-	h1 {
-		text-transform: uppercase;
-		margin-top: 5rem;
 		position: absolute;
-		font-size: 50px;
+		right: 10px;
+		height: 0;
+
+		button {
+			position: relative;
+			top: 7px;
+			width: 140px;
+			height: 25px;
+		}
 	}
 
-	p {
-		margin-top: 9rem;
-		position: absolute;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-	}
-
-	.b-register {
-		position: absolute;
-		margin-top: 13rem;
-	}
-
-	.b-login {
-		position: absolute;
-		margin-top: 16rem;
-	}
+	height: 42px;
+	width: 100%;
 }
 
 .main-section {
-	z-index: 3;
 	width: 100%;
-	height: 300px;
-	box-shadow: 0 -6px 2px -1px rgba(0, 0, 0, .5);
-	position: absolute;
+	padding-top: 168px;
 
-	.main-content {
-		margin: 0 auto;
-		width: 1050px;
+	.container {
+		box-sizing: border-box;
+		max-width: calc(1500px + 4vw);
+		//max-width: calc(1500px + 20vw); (тест)
 	}
+}
+
+.row {
+	&::before {
+		content: " ";
+		display: table;
+	}
+}
+
+.vertical {
+	display: block;
+	text-align: left;
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	transform-origin: left center;
+	background-position: center center;
+	font-feature-settings: "smcp"1, "c2c"1;
+	line-height: 1;
+	font-size: 1em;
+	//transform: rotateZ(0) translateX(2.6em) translateY(-5em);
+	transform: rotateZ(90deg) translateX(-5em) translateY(1em);
+	margin: 5em -2.5em 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.article-grid-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	.article--grid {
+		display: flex;
+		flex-direction: column;
+		min-height: 0;
+		padding: 0 1em;
+		padding-bottom: 150px;
+		transition: all .2s ease-out;
+		position: relative;
+	}
+
+	.col--article--grid {
+		order: 1;
+	}
+}
+
+.article--grid::before {
+	display: block;
+	width: calc(100% + 60px);
+	height: 100%;
+	content: "";
+	position: absolute;
+	left: -30px;
+	top: -30px;
+	padding: 15px;
+	transition: background-color .1s ease-out;
+	background-color: transparent;
+
+}
+
+.article-info-header {
+	.article--grid__image {
+		width: calc(100% - 4em);
+		height: 14em;
+		margin-top: 20px;
+		margin-bottom: -20px;
+	}
+}
+
+.article--grid__content-wrapper {
+	width: 30em;
+	text-align: left;
+}
+
+.article--grid .article--grid__content-wrapper {
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.article--grid {
+	&::after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+}
+
+.article--grid {
+	.article--grid__content-wrapper {
+		&::after {
+			content: "";
+			display: block;
+			margin-top: calc(1.3em + .5vw);
+		}
+	}
+}
+
+.article--grid__read-more {
+		z-index: 2;
+		display: block;
+		font-size: 2.5em;
+		padding: 1em 1.7em 1.7em 1.2em;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		text-shadow: none;
+		background: 0 0;
+		background-color: inherit;
+		margin-top: 60px;
+		position: absolute!important;
+		right: -60px;
+		bottom: 0px;
+
+		.sr-only{
+			display: inline-block;
+			height: 0;
+			width: 0;
+			line-height: 0;
+			overflow: hidden;
+		}
+}
+
+
+//-----------------------------------------------
+
+.load-more {
+	text-align: center;
+	padding: 1em 0 5em;
 }

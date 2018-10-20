@@ -9,57 +9,169 @@
     <link rel="stylesheet" href="vender/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300i,400|Roboto" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">Логотип</div>
-        <nav class="nav-mnu">
-            <div class="mnu-item"><img src="img/top-menu-icons/icons8-электронное-обучение-2-48.png" alt="Article"> <a href="#">Статьи</a></div>
-            <div class="mnu-item"><img src="img/top-menu-icons/icons8-новости-50.png" alt="News"><a href="#">Новости</a></div>
-            <div class="mnu-item"><img src="img/top-menu-icons/icons8-бобина-с-пленкой-50.png" alt="Movie"><a href="#">Фильмы</a></div>
-            <div class="mnu-item"><img src="img/top-menu-icons/icons8-фильм-64.png" alt="Setials"><a href="#">Сериалы</a></div>
-            <div class="mnu-item"><img src="img/top-menu-icons/icons8-популярная-тема-64.png" alt="Top"><a href="#"></a><a href="#">ТОП</a></div>
-            <div class="mnu-item"><img src="img/top-menu-icons/icons8-документальный-64.png" alt="Take"><a href="#"></a><a href="#">За кадром</a></div>
-        </nav>
-    </header>
-    <section class="top-slider container">
-        <div class="fullscreen-video-wrap">
-            <video src="video/videoplayback.webm" autoplay="true" loop="true" muted="true"></video>
-            <div class="top-slider-overlay">
-                <div class="slider-content">
-                    <h1>Важный текст</h1>
-                    <p>Тут тоже типа того</p>
-                    <button class="b-register">Регистрация</button>
-                    <button class="b-login">Войти</button>
-                </div>
+        <div class="line-authorization">
+            <div class="block-button">
+                <button class="b-register">Регистрация</button>
+                <button class="b-login">Войти</button>
             </div>
         </div>
-    </section>
+        <div class="head-grid">
+            <div class="logo">Логотип</div>
+            <nav class="nav-mnu">
+                <div class="mnu-item"><img src="img/top-menu-icons/icons8-новости-50.png" alt="News"><a href="#">Новости</a></div>
+                <div class="mnu-item"><img src="img/top-menu-icons/icons8-электронное-обучение-2-48.png" alt="Article">
+                    <a href="#">Статьи</a></div>
+                <div class="mnu-item"><img src="img/top-menu-icons/icons8-бобина-с-пленкой-50.png" alt="Movie"><a href="#">Фильмы</a></div>
+                <div class="mnu-item"><img src="img/top-menu-icons/icons8-фильм-64.png" alt="Setials"><a href="#">Сериалы</a></div>
+                <div class="mnu-item"><img src="img/top-menu-icons/icons8-популярная-тема-64.png" alt="Top"><a href="#"></a><a
+                        href="#">ТОП</a></div>
+                <div class="mnu-item"><img src="img/top-menu-icons/icons8-документальный-64.png" alt="Take"><a href="#"></a><a
+                        href="#">За кадром</a></div>
+            </nav>
+        </div>
+    </header>
+
 
     <section class="main-section">
-        <div class="main-content">
-            <div class="article">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Placeat rem reprehenderit aperiam sint aliquam? Ducimus rem est dolorem placeat
-                    a ab sit! Sed nesciunt odio debitis dicta architecto et voluptate. Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit.
-                    Distinctio, aut doloribus nemo earum autem amet nesciunt natus
-                    labore nobis qui repudiandae est suscipit obcaecati consectetur molestias soluta, eveniet,
-                    voluptates eius.</p>
-            </div>
-        </div>
-
-        <aside class="block-calendar">
-            <div id="calendar">
-                <div id="calendar_header"><i class="icon-chevron-left"></i>
-                    <h1></h1><i class="icon-chevron-right"></i>
+        <div class="container">
+            <div class="row">
+                <h4 class="vertical vertical-horizontal left-lined">
+                    <span>Последние публикации</span>
+                </h4>
+                <div class="article-grid-container">
+                    <div class="article--grid col--article--grid">
+                        <article class="article--grid__content-wrapper">
+                            <div class="article-info-header">
+                                <!--TODO (Время последней публикации)-->
+                                <time datetime="2018-10-09" class="article--grid__time js-time-ago">5 дней назад</time>
+                                <img class="article--grid__image" src="img/article-preview/venom.jpg" alt="venom">
+                                <h2 class="article--gird__title">
+                                    <a href="#">Веном бьет рекорды. Почему?</a>
+                                </h2>
+                                <span class="article--grid__autor">Автор: <a href="#">Pavel Lisenkov</a></span>
+                            </div>
+                            <p class="article--grid__content">
+                                Идейные соображения высшего порядка, а также постоянный количественный рост и сфера
+                                нашей активности представляет собой интересный эксперимент проверки системы обучения
+                                кадров, соответствует насущным потребностям. .</p>
+                        </article>
+                        <a class="article--grid__read-more" href="#">→
+                            <span class="sr-only">Read more</span>
+                        </a>
+                    </div>
+                    <div class="article--grid col--article--grid">
+                        <article class="article--grid__content-wrapper">
+                            <div class="article-info-header">
+                                <!--TODO (Время последней публикации)-->
+                                <time datetime="2018-10-09" class="article--grid__time js-time-ago">5 дней назад</time>
+                                <img class="article--grid__image" src="img/article-preview/прибытие.jpg" alt="прибытие">
+                                <h2 class="article--gird__title">
+                                    <a href="#">Тут типа пиздатый заголовок</a>
+                                </h2>
+                                <span class="article--grid__autor">Автор: <a href="#">Pavel Lisenkov</a></span>
+                            </div>
+                            <p class="article--grid__content">
+                                Идейные соображения высшего порядка, а также постоянный количественный рост и сфера
+                                нашей активности представляет собой интересный эксперимент проверки системы обучения
+                                кадров, соответствует насущным потребностям. .</p>
+                        </article>
+                        <a class="article--grid__read-more" href="#">→
+                                <span class="sr-only">Read more</span>
+                            </a>
+                    </div>
+                    <div class="article--grid col--article--grid">
+                        <article class="article--grid__content-wrapper">
+                            <div class="article-info-header">
+                                <!--TODO (Время последней публикации)-->
+                                <time datetime="2018-10-09" class="article--grid__time js-time-ago">5 дней назад</time>
+                                <img class="article--grid__image" src="img/article-preview/the incredibles.jpg" alt="the_increbdibles">
+                                <h2 class="article--gird__title">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                </h2>
+                                <span class="article--grid__autor">Автор: Pavel Lisenkov</span>
+                            </div>
+                            <p class="article--grid__content">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero reprehenderit, quo inventore qui est itaque asperiores,
+                                eligendi fugiat ipsum ullam molestiae ratione! Nam adipisci doloribus harum? Quod nam
+                                officia dolor.</p>
+                        </article>
+                        <a class="article--grid__read-more" href="#">→
+                                <span class="sr-only">Read more</span>
+                            </a>
+                    </div>
+                    <div class="article--grid col--article--grid">
+                        <article class="article--grid__content-wrapper">
+                            <div class="article-info-header">
+                                <!--TODO (Время последней публикации)-->
+                                <time datetime="2018-10-09" class="article--grid__time js-time-ago">5 дней назад</time>
+                                <h2 class="article--gird__title">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                </h2>
+                                <span class="article--grid__autor">Автор: Pavel Lisenkov</span>
+                            </div>
+                            <p class="article--grid__content">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero reprehenderit, quo inventore qui est itaque asperiores,
+                                eligendi fugiat ipsum ullam molestiae ratione! Nam adipisci doloribus harum? Quod nam
+                                officia dolor.</p>
+                        </article>
+                        <a class="article--grid__read-more" href="#">→
+                                <span class="sr-only">Read more</span>
+                            </a>
+                    </div>
+                    <div class="article--grid col--article--grid">
+                        <article class="article--grid__content-wrapper">
+                            <div class="article-info-header">
+                                <!--TODO (Время последней публикации)-->
+                                <time datetime="2018-10-09" class="article--grid__time js-time-ago">5 дней назад</time>
+                                <h2 class="article--gird__title">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                </h2>
+                                <span class="article--grid__autor">Автор: Pavel Lisenkov</span>
+                            </div>
+                            <p class="article--grid__content">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero reprehenderit, quo inventore qui est itaque asperiores,
+                                eligendi fugiat ipsum ullam molestiae ratione! Nam adipisci doloribus harum? Quod nam
+                                officia dolor.</p>
+                        </article>
+                        <a class="article--grid__read-more" href="#">→
+                                <span class="sr-only">Read more</span>
+                            </a>
+                    </div>
+                    <div class="article--grid col--article--grid">
+                        <article class="article--grid__content-wrapper">
+                            <div class="article-info-header">
+                                <!--TODO (Время последней публикации)-->
+                                <time datetime="2018-10-09" class="article--grid__time js-time-ago">5 дней назад</time>
+                                <h2 class="article--gird__title">
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                </h2>
+                                <span class="article--grid__autor">Автор: Pavel Lisenkov</span>
+                            </div>
+                            <p class="article--grid__content">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Vero reprehenderit, quo inventore qui est itaque asperiores,
+                                eligendi fugiat ipsum ullam molestiae ratione! Nam adipisci doloribus harum? Quod nam
+                                officia dolor.</p>
+                        </article>
+                        <a class="article--grid__read-more" href="#">→
+                            <span class="sr-only">Read more</span>
+                        </a>
+                    </div>
                 </div>
-                <div id="calendar_weekdays"></div>
-                <div id="calendar_content"></div>
+                <div class="load-more">
+                    <a class="load-more__link" href="#">Показать все статьи →</a>
+                </div>
             </div>
-        </aside>
+
     </section>
 
 
